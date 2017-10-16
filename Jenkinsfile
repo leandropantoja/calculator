@@ -2,6 +2,16 @@ pipeline {
     agent any
     stages {
 
+
+           stage("Checkout") {
+                steps {
+                    ws ('/var/jenkins/') {
+                        git url: 'https://github.com/leandropantoja/calculator.git'
+                    }
+                }
+            }
+
+
             stage("Compile") {
                 steps {
 	                ws ('/var/jenkins/') {
