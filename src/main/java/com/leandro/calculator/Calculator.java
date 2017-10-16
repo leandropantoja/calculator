@@ -1,6 +1,11 @@
 package com.leandro.calculator;
    import org.springframework.stereotype.Service;
-   @Service
+
+/**
+    * Main Spring Application.
+*/ 
+
+  @Service
    public class Calculator {
         int sum(int a, int b) {
              return a + b;
